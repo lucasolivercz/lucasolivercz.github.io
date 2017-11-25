@@ -5,8 +5,8 @@ var gulp = require("gulp");
 var sass = require("gulp-sass");
 var rename = require("gulp-rename");
 
-var scssFiles = "/sass/*.scss";
-var cssDest = "/css";
+var scssFiles = "sass/*.scss";
+var cssDest = "css/";
 
 var sassDevOptions = {
     outputStyle: 'expanded'
