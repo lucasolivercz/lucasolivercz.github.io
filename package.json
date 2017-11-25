@@ -1,0 +1,28 @@
+{
+  "name": "lucasolivercz",
+  "version": "1.0.0",
+  "description": "Projeto referente ao blog pessoal de Lucas Oliveira.",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucasolivercz/lucasolivercz.github.io"
+  },
+  "keywords": [
+    "lucas",
+    "Oliveira",
+    "lucasoliver",
+    "cajazeiras",
+    "corridas",
+    "viagens"
+  ],
+  "authores": [
+    "Dijalma Silva"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  }
+}
