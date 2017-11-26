@@ -208,7 +208,13 @@ h1 {
     z-index: 2;
 
     div {
-      margin-top: 70px;
+      width: 97%;
+      margin: 0 auto;
+      margin-top: 60px;
+
+      h2 {
+        padding-bottom: 5px;
+      }
     }
   }
 }
@@ -234,7 +240,7 @@ form {
 
   .confirm {
     position: absolute;
-    right: 0px;
+    right: 0;
     bottom: -5px;
 
     button {
@@ -251,4 +257,33 @@ form {
 .rodape {
   background-image: linear-gradient(to right, #DB162F 0%, lighten(#DB162F, 10%) 100%);
   padding: 20px;
+}
+@media(max-width:700px) {
+  .row {
+    .col-3 {
+      width: 45%;
+    }
+  }
+}
+@media(max-width:416px) {
+  .sobre .conteudo div {
+    margin-top: 30px;
+
+    h1 {
+      line-height: 40px;
+    }
+
+    .about-me {
+      width: 90%;
+    }
+  }
+}
+@media(max-width:460px) {
+  .row {
+    .col-2,
+    .col-3 {
+      width: 95%;
+      margin: 0 auto 10px;
+    }
+  }
 }
