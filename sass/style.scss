@@ -10,6 +10,12 @@ body {
   font-family: 'Ubuntu Condensed', sans-serif;
   line-height: 22px;
   text-align: center;
+  color: white;
+
+  a {
+    text-decoration: none;
+    color: lighten(#000, 10%);
+  }
 }
 
 h1 {
@@ -21,7 +27,12 @@ h1 {
 
 .medium-space {
   min-height: 400px;
-  padding: 10px;
+  padding: 20px;
+}
+
+.small-space {
+  min-height: 200px;
+  padding: 20px;
 }
 
 .sobre {
@@ -45,12 +56,12 @@ h1 {
 
   .conteudo {
     z-index: 2;
-    color: white;
 
     div {
       margin-top: 100px;
       text-align: center;
       padding: 10px;
+      height: 300px;
 
       .about-me {
         margin: 0 auto;
@@ -62,9 +73,182 @@ h1 {
 }
 
 .patrocinadores {
-  padding: 20px;
+  color: black;
+  background: lighten(gray, 75%);
+}
+
+.skew {
+  -webkit-transform: skew(20deg);
+}
+
+.row {
+  width: 95%;
+  margin: 0 auto;
+
+  .col-3 {
+    width: 30%;
+    margin: 5px;
+    display: inline-block;
+  }
+
+  .col-2 {
+    width: 45%;
+    margin: 5px;
+    display: inline-block;
+  }
+
+  .col-1 {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+.hr {
+  width: 30px;
+  height: 2px;
+  background: #000;
+  margin: 0 auto;
+}
+
+.corridas {
   background: lighten(#000, 20%);
-  color: white;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
+
+  .corrida {
+    img {
+      max-width: 100%;
+      transition: all 0.3s ease;
+
+      &:hover {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+    }
+
+    h3 {
+      margin-top: 10px;
+    }
+  }
+
+  .slide-horizontal {
+    display: none;
+    width: 100%;
+    overflow-x: auto;
+
+    .box-image {
+      img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+}
+
+.viagens {
+  color: black;
+  background: lighten(gray, 75%);
+
+  .viagem {
+    img {
+      max-width: 100%;
+      transition: all 0.3s ease;
+
+      &:hover {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+    }
+
+    h3 {
+      margin-top: 10px;
+    }
+  }
+
+  .slide-horizontal {
+    display: none;
+    width: 100%;
+    overflow-x: auto;
+
+    .box-image {
+      img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+}
+
+.mensagem {
+  background: url("../images/imagem-reflexiva.jpg") no-repeat fixed center;
+  background-size: cover;
+  position: relative;
+
+  .absolute {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .backdrop {
+    background: #000;
+    opacity: 0.6;
+    z-index: 1;
+  }
+
+  .conteudo {
+    z-index: 2;
+
+    div {
+      margin-top: 70px;
+    }
+  }
+}
+
+.contato {
+  color: #000;
+}
+
+form {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 30px;
+
+  input,
+  textarea {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    resize: none;
+  }
+
+  .confirm {
+    position: absolute;
+    right: 0px;
+    bottom: -5px;
+
+    button {
+      background-image: -webkit-linear-gradient(left, #DB162F 0%, lighten(#DB162F, 10%) 100%);
+      background-image: -o-linear-gradient(left, #DB162F 0%, lighten(#DB162F, 10%) 100%);
+      background-image: linear-gradient(to right, #DB162F 0%, lighten(#DB162F, 10%) 100%);
+      padding: 10px;
+      border: none;
+      color: white;
+    }
+  }
+}
+
+.rodape {
+  background-image: linear-gradient(to right, #DB162F 0%, lighten(#DB162F, 10%) 100%);
+  padding: 20px;
 }
