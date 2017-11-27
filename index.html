@@ -6,6 +6,8 @@
   <title>Lucas Oliver</title>
   <script src="js/shared/angular.min.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/services/corridasService.js"></script>
+  <script src="js/controllers/corridasController.js"></script>
   <link rel="stylesheet" type="text/css" href="css/animate.css" />
   <link rel="stylesheet" type="text/css" href="css/style.min.css" />
 </head>
@@ -16,11 +18,18 @@
       <div>
         <h1>Lucas Oliveira</h1><br />
         <div class="about-me">
-          <h4>Usu cu movet postulant, aeterno electram vel te, lobortis necessitatibus et
-            mei. Vel fabulas tacimates constituam te, omittam splendide his an.
-            Ea vix odio iusto aliquando, pro aeque minimum appareat an. Mei eu
-            feugiat ocurreret gloriatur. Ei mea aeque luptatum, qui ne integre
-            indoctum. Choro tibique vix cu, per ne sint interesset!</h4>
+          <h4>Atleta, motociclista, empreendedor, sonhador e palestrante, gosto
+            de aventura e esporte, amo viajar e fazer novas amizades. Sou graduado
+            em Automação Industrial e Técnico em Eletromecânica pelo IFPB
+            Campus Cajazeiras. Trabalho com Automação residencial pela Lab Future
+            e com energia solar fotovoltaica pela Eletrofios+Sol. Sou membro do Moto
+            Clube Legião de Anjos, codinome Flash, e da Associação Cajazeirense de
+            Atletismo com alto desempenho. Em um ano de corridas conquistei mais de 12 troféus
+            e cerca de 22 medalhas. Campeão da corrida Rústica do Trabalhador
+            (São José de Piranhas-PB) e da Corrida Rosa, promovida pela Faculdade Santa Maria
+            (Cajazeiras-PB). Escolhi este espaço para compartilhar fotos, vídeos e
+            dicas sobre viagens de moto e corridas de rua. Almejo correr a meia maratona do
+            Rio de Janeiro ano que vem e, daqui a cinco anos, correr uma maratona fora do Brasil.</h4>
         </div>
       </div>
     </div>
@@ -31,25 +40,23 @@
     <div class="patrocinador">
     </div>
   </div>
-  <div class="medium-space corridas">
+  <div class="medium-space corridas" ng-controller="CorridasController">
     <h2>Corridas</h2>
     <br />
     <div class="row">
-      <div class="corrida col-3">
-        <img src="images/corrida1.jpg" alt="imagem capa" />
-        <h3 class="">Nome da corrida</h3>
-      </div>
-      <div class="corrida col-3">
-        <img src="images/corrida2.jpg" alt="imagem capa" />
-        <h3 class="">Nome da corrida</h3>
-      </div>
-      <div class="corrida col-3">
-        <img src="images/corrida3.jpg" alt="imagem capa" />
-        <h3 class="">Nome da corrida</h3>
+      <div class="corrida col-3" ng-repeat="corrida in corridas">
+        <img ng-src="{{corrida.pasta + corrida.fotos[0]}}" alt="Imagem capa" />
+        <h3 class="">{{corrida.nome}}</h3>
       </div>
     </div>
     <br /><br />
     <div class="slide-horizontal">
+      <div>
+          <h2>{{corrida.nome}}</h2>
+          <p>
+            {{corrida.descricao}}
+          </p>
+      </div>
       <div class="box-image">
         <img src="" alt="imagem" />
       </div>
@@ -102,9 +109,8 @@
     <div class="conteudo absolute">
       <div>
         <h1>"</h1>
-        <h2>A alegria está na luta, na tentativa, no sofrimento envolvido e não
-          na vitória propriamente dita.</h2>
-        <h4>Mahatma Gandhi</h4>
+        <h2>O único obstáculo intransponivel é aquele que você mesmo impõe.</h2>
+        <h4>Lucas Oliveira.</h4>
       </div>
     </div>
   </div>
@@ -118,11 +124,11 @@
       </div>
       <div class="col-2">
         <img src="icons/telephone.png" alt="icone telefone" />
-        <h4>(83) 99444-2587</h4>
+        <h4>(83) 99159-6496</h4>
       </div>
       <div class="col-1">
         <img src="icons/marker.png" alt="icone localização" />
-        <h4>Rua alguma coisa, em algum bairro, em Cajazeiras-PB.</h4>
+        <h4>Rua toburtino Cartaxo,198, Ap 01, Centro, Cajazeiras-PB.</h4>
       </div>
     </div>
     <br />

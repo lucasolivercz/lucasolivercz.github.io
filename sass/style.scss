@@ -258,23 +258,23 @@ form {
   background-image: linear-gradient(to right, #DB162F 0%, lighten(#DB162F, 10%) 100%);
   padding: 20px;
 }
-@media(max-width:700px) {
-  .row {
-    .col-3 {
-      width: 45%;
-    }
-  }
-}
-@media(max-width:416px) {
+@media(max-width:835px) {
   .sobre .conteudo div {
-    margin-top: 30px;
+    margin-top: 15px;
 
     h1 {
       line-height: 40px;
     }
 
     .about-me {
-      width: 90%;
+      width: 94%;
+    }
+  }
+}
+@media(max-width:700px) {
+  .row {
+    .col-3 {
+      width: 45%;
     }
   }
 }
@@ -284,6 +284,23 @@ form {
     .col-3 {
       width: 95%;
       margin: 0 auto 10px;
+    }
+  }
+}
+@media(max-width:422px) {
+  .sobre {
+    min-height: 550px;
+  }
+
+  .sobre .conteudo div {
+    margin-top: 8px;
+
+    h1 {
+      line-height: 40px;
+    }
+
+    .about-me {
+      width: 98%;
     }
   }
 }
