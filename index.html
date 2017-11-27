@@ -3,11 +3,10 @@
 <head lang="pt-br">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8" />
+  <meta name="theme-color" content="#474747"/>
   <title>Lucas Oliver</title>
-  <script src="js/shared/angular.min.js"></script>
+  <script src="js/shared/jquery-3.2.1.min.js"></script>
   <script src="js/app.js"></script>
-  <script src="js/services/corridasService.js"></script>
-  <script src="js/controllers/corridasController.js"></script>
   <link rel="stylesheet" type="text/css" href="css/animate.css" />
   <link rel="stylesheet" type="text/css" href="css/style.min.css" />
 </head>
@@ -40,34 +39,57 @@
     <div class="patrocinador">
     </div>
   </div>
-  <div class="medium-space corridas" ng-controller="CorridasController">
+  <div class="medium-space corridas">
     <h2>Corridas</h2>
     <br />
     <div class="row">
       <div class="corrida col-3" ng-repeat="corrida in corridas">
-        <img ng-src="{{corrida.pasta + corrida.fotos[0]}}" alt="Imagem capa" />
-        <h3 class="">{{corrida.nome}}</h3>
+        <img src="images/corridas/independecia-cajazeiras-pb/capa.jpeg" alt="imagem capa" id="img-corrida-independencia"/>
+        <h3 class="">IV Corrida da Independência Cajazeiras-PB</h3>
       </div>
     </div>
     <br /><br />
-    <div class="slide-horizontal">
+    <div class="slide-horizontal" id="corrida-indepedencia">
+      <div class="close">
+        <span>x</span>
+      </div>
       <div>
-          <h2>{{corrida.nome}}</h2>
-          <p>
-            {{corrida.descricao}}
-          </p>
-      </div>
-      <div class="box-image">
-        <img src="" alt="imagem" />
-      </div>
-      <div class="box-image">
-        <img src="" alt="imagem" />
-      </div>
-      <div class="box-image">
-        <img src="" alt="imagem" />
-      </div>
-      <div class="box-image">
-        <img src="" alt="imagem" />
+        <h2>IV Corrida da Independência Cajazeiras-PB</h2>
+        <p>
+          Fiquei em primeiro lugar categoria masculino local.
+        </p>
+      </div> <br />
+      <div class="images-roll">
+        <div class="box-image">
+          <img src="images/corridas/independecia-cajazeiras-pb/capa.jpeg" alt="imagem" />
+        </div>
+        <div class="box-image">
+          <img src="images/corridas/independecia-cajazeiras-pb/foto1.jpeg" alt="imagem" />
+        </div>
+        <div class="box-image">
+          <img src="images/corridas/independecia-cajazeiras-pb/foto2.jpeg" alt="imagem" />
+        </div>
+        <div class="box-image">
+          <img src="images/corridas/independecia-cajazeiras-pb/foto3.jpeg" alt="imagem" />
+        </div>
+        <div class="box-image">
+          <img src="images/corridas/independecia-cajazeiras-pb/foto4.jpeg" alt="imagem" />
+        </div>
+        <div class="box-image">
+          <img src="images/corridas/independecia-cajazeiras-pb/foto5.jpeg" alt="imagem" />
+        </div>
+        <div class="box-image">
+          <img src="images/corridas/independecia-cajazeiras-pb/foto6.jpeg" alt="imagem" />
+        </div>
+        <div class="box-image">
+          <img src="images/corridas/independecia-cajazeiras-pb/foto7.jpeg" alt="imagem" />
+        </div>
+        <div class="box-image">
+          <img src="images/corridas/independecia-cajazeiras-pb/foto8.jpeg" alt="imagem" />
+        </div>
+        <div class="box-image">
+          <img src="images/corridas/independecia-cajazeiras-pb/foto9.jpeg" alt="imagem" />
+        </div>
       </div>
     </div>
   </div>
@@ -75,7 +97,7 @@
     <h2>Viagens</h2>
     <br />
     <div class="row">
-      <div class="viagem col-3">
+      <!--<div class="viagem col-3">
         <img src="images/corrida1.jpg" alt="imagem capa" />
         <h3 class="">Viagem</h3>
       </div>
@@ -86,7 +108,7 @@
       <div class="viagem col-3">
         <img src="images/corrida3.jpg" alt="imagem capa" />
         <h3 class="">Viagem</h3>
-      </div>
+      </div>-->
     </div>
     <br /><br />
     <div class="slide-horizontal">
@@ -119,7 +141,7 @@
     <br />
     <div class="row">
       <div class="col-2">
-        <img src="icons/email.png" alt="icone email"/>
+        <img src="icons/email.png" alt="icone email" />
         <h4>lucasolivercz@gmail.com</h4>
       </div>
       <div class="col-2">
@@ -132,7 +154,7 @@
       </div>
     </div>
     <br />
-    <hr class="hr"/>
+    <hr class="hr" />
     <br />
     <div class="contact-email">
       <h4>Entre em contato</h4>

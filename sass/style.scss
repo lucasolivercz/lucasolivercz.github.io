@@ -12,6 +12,15 @@ body {
   text-align: center;
   color: white;
 
+  &::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: lighten(#DB162F, 10%);
+  }
+
   a {
     text-decoration: none;
     color: lighten(#000, 10%);
@@ -135,14 +144,53 @@ h1 {
   }
 
   .slide-horizontal {
-    display: none;
     width: 100%;
-    overflow-x: auto;
+    height: 300px;
+    position: relative;
 
-    .box-image {
-      img {
-        width: 200px;
-        height: 200px;
+    .close {
+      position: absolute;
+      top: 0;
+      right: 5px;
+
+      span {
+        font-weight: bold;
+        font-size: 25px;
+        text-shadow: lighten(#DB162F, 10%) 2px 2px;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .images-roll {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      height: 240px;
+      white-space: nowrap;
+
+      &::-webkit-scrollbar {
+        height: 6px;
+        background-color: #F5F5F5;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: lighten(#DB162F, 10%);
+      }
+
+      .box-image {
+        display: inline-block;
+        margin: 20px;
+
+        img {
+          width: auto;
+          height: 200px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
       }
     }
   }
@@ -209,8 +257,7 @@ h1 {
 
     div {
       width: 97%;
-      margin: 0 auto;
-      margin-top: 60px;
+      margin: 60px auto 0;
 
       h2 {
         padding-bottom: 5px;
