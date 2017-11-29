@@ -45,7 +45,7 @@ h1 {
 }
 
 .sobre {
-  background: url("../images/background1.jpg") no-repeat fixed center bottom;
+  background: url("../images/background1.jpg") no-repeat fixed center;
   background-size: cover;
   position: relative;
 
@@ -84,6 +84,13 @@ h1 {
 .patrocinadores {
   color: black;
   background: lighten(gray, 75%);
+
+  .patrocinador {
+    img {
+      max-width: 200px;
+      height: auto;
+    }
+  }
 }
 
 .skew {
@@ -93,6 +100,11 @@ h1 {
 .row {
   width: 95%;
   margin: 0 auto;
+
+  img {
+    max-height: 200px;
+    width: auto;
+  }
 
   .col-3 {
     width: 30%;
