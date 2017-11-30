@@ -154,54 +154,54 @@ h1 {
       margin-top: 10px;
     }
   }
+}
 
-  .slide-horizontal {
-    width: 100%;
-    height: 300px;
-    position: relative;
+.slide-horizontal {
+  width: 100%;
+  height: 300px;
+  position: relative;
 
-    .close {
-      position: absolute;
-      top: 0;
-      right: 5px;
+  .close {
+    position: absolute;
+    top: 0;
+    right: 5px;
 
-      span {
-        font-weight: bold;
-        font-size: 25px;
-        text-shadow: lighten(#DB162F, 10%) 2px 2px;
-      }
-
-      &:hover {
-        cursor: pointer;
-      }
+    span {
+      font-weight: bold;
+      font-size: 25px;
+      text-shadow: lighten(#DB162F, 10%) 2px 2px;
     }
 
-    .images-roll {
-      overflow-x: scroll;
-      overflow-y: hidden;
-      height: 220px;
-      white-space: nowrap;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 
-      &::-webkit-scrollbar {
-        height: 6px;
-        background-color: #F5F5F5;
-      }
+  .images-roll {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 220px;
+    white-space: nowrap;
 
-      &::-webkit-scrollbar-thumb {
-        background-color: lighten(#DB162F, 10%);
-      }
+    &::-webkit-scrollbar {
+      height: 6px;
+      background-color: #F5F5F5;
+    }
 
-      .box-image {
-        display: inline-block;
-        margin: 20px;
+    &::-webkit-scrollbar-thumb {
+      background-color: lighten(#DB162F, 10%);
+    }
 
-        img {
-          width: auto;
-          height: 180px;
+    .box-image {
+      display: inline-block;
+      margin: 20px;
 
-          &:hover {
-            cursor: pointer;
-          }
+      img {
+        width: auto;
+        height: 180px;
+
+        &:hover {
+          cursor: pointer;
         }
       }
     }
@@ -228,19 +228,6 @@ h1 {
 
     h3 {
       margin-top: 10px;
-    }
-  }
-
-  .slide-horizontal {
-    display: none;
-    width: 100%;
-    overflow-x: auto;
-
-    .box-image {
-      img {
-        width: 200px;
-        height: 200px;
-      }
     }
   }
 }
